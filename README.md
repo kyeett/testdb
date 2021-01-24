@@ -27,7 +27,7 @@ func (s *ExampleTestSuite) SetupSuite() {
 }
 
 func (s *ExampleTestSuite) TearDownSuite() {
-    // Make sure to clear everything after test suite
+	// Make sure to clear everything after test suite
 	assert.NoError(s.T(), s.db.Close())
 	assert.NoError(s.T(), s.pgContainer.Close(), "could not purge resource")
 }
@@ -38,7 +38,7 @@ func TestExampleTestSuite(t *testing.T) {
 ```
 
 Postgres connection can be used in tests like this:
-```
+```go
 // Test pinging our db
 func (s *ExampleTestSuite) TestPingDB() {
 	err := s.db.Ping()

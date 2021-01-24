@@ -13,7 +13,8 @@ require (
 	github.com/lib/pq v1.9.0
 	github.com/opencontainers/runc v0.1.1 // indirect
 	github.com/ory/dockertest v3.3.5+incompatible
-	github.com/stretchr/testify v1.7.0 // indirect
+	github.com/streadway/amqp v1.0.0
+	github.com/stretchr/testify v1.7.0
 	golang.org/x/net v0.0.0-20210119194325-5f4716e94777 // indirect
 	golang.org/x/sys v0.0.0-20210123111255-9b0068b26619 // indirect
 )
